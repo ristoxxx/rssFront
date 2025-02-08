@@ -7,7 +7,7 @@ function App() {
   console.log(articles);
   const fetchArticles = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/articles');
+      const response = await axios.get('https://rssvercel.vercel.app/articles');
       setArticles(response.data);
     } catch (error) {
       console.error('Error fetching articles:', error);
