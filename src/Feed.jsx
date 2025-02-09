@@ -3,12 +3,13 @@
  * Created Date: Tuesday February 4th 2025 01:38:56
  * Author: ristoxxx@github.com
  * -----
- * Last Modified: Sunday February 9th 2025 05:40:06
+ * Last Modified: Sunday February 9th 2025 05:48:36
  * Modified By: ristoxxx@github.com
  * -----
  * Copyright (c) 2025 ristoxxx@github.com
  */
 function openAndCloseTab(url, timeout = 5000) {
+  alert('Ladataan...');
   const newTab = window.open(url, '_blank'); // Avaa uuden välilehden
   
   if (newTab) {
