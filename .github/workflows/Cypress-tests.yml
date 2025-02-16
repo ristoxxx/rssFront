@@ -21,20 +21,22 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
 
       # Step 4: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 5: Start the React app
-      - name: Start React App
-        run: npm start &
-        env:
-          CI: true
+       Step 5: Start the React app
+      - name: Start Vite App
+        run: npm run dev
+        
+      #  env:
+      #    CI: true
 
       # Step 6: Wait for the app to be ready
-      - name: Wait for React App
+      - name: Wait for Vite App
+        #wait-on: 'http://localhost:5173'
         run: npx wait-on http://127.0.0.1:3000
 
       # Step 7: Run Cypress tests
