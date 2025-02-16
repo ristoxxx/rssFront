@@ -28,16 +28,24 @@ jobs:
         run: npm install
 
       # Step 5: Start the React app
-      - name: Start Vite App
-        run: npx vite --host
+      #- name: Start Vite App
+      #  run: npx vite --host
         
       #  env:
       #    CI: true
 
       # Step 6: Wait for the app to be ready
-      - name: Wait for Vite App
+      #- name: Wait for Vite App
         #wait-on: 'http://localhost:5173'
-        run: npx wait-on 'http://localhost:5173'
+      #  run: npx wait-on 'http://localhost:5173'
+
+      - name: Test
+        uses: cypress-io/github-action@v5
+        with:
+          build: npm run build
+          start: npm run start
+          wait-on: 'http://localhost:5173'
+
 
       # Step 7: Run Cypress tests
       - name: Run Cypress tests
