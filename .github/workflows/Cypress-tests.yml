@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-       Step 5: Start the React app
+      # Step 5: Start the React app
       - name: Start Vite App
         run: npm run dev
         
