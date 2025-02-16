@@ -37,7 +37,7 @@ jobs:
       # Step 6: Wait for the app to be ready
       - name: Wait for Vite App
         #wait-on: 'http://localhost:5173'
-        run: npx wait-on http://127.0.0.1:5173
+        run: npx wait-on http://localhost:5173
 
       # Step 7: Run Cypress tests
       - name: Run Cypress tests
