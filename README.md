@@ -1,6 +1,6 @@
 # Rss reader
 
-![Run Cypress Tests](https://github.com/ristoxxx/workflowAWS/actions/workflows/cypress-tests.yml/badge.svg)   
+![Run Cypress Tests](https://github.com/ristoxxx/rssFront/actions/workflows/Cypress-tests.yml/badge.svg)   
 
 Reads main news headlines from differnt sources and forms a links to actual news pages.
 
