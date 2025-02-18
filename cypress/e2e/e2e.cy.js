@@ -3,7 +3,7 @@
  * Created Date: Sunday February 16th 2025 10:27:52
  * Author: ristoxxx@github.com
  * -----
- * Last Modified: Sunday February 16th 2025 11:07:38
+ * Last Modified: Tuesday February 18th 2025 11:39:59
  * Modified By: ristoxxx@github.com
  * -----
  * Copyright (c) 2025 ristoxxx@github.com
@@ -35,6 +35,5 @@ describe('template spec', () => {
         cy.contains('Lue lisää').should('be.visible')
         cy.screenshot('img')
         cy.contains('Lue lisää').click()
-
     })
     })
