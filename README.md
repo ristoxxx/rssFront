@@ -6,3 +6,6 @@ Reads main news headlines from differnt sources and forms a links to actual news
 
 Frontend hosted at [Vercel](https://rss-front.vercel.app)
 Backend hosted at [Vercel](https://rssvercel.vercel.app/articles)
+
+
+![alt text](https://github.com/ristoxxx/rssFront/blob/main/cypress/screenshots/e2e.cy.js/img.png?raw=true)
